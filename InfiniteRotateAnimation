@@ -1,0 +1,6 @@
+ RotateAnimation rotateAnimation = new RotateAnimation(0, 360, RotateAnimation.RELATIVE_TO_SELF, 0.5f, RotateAnimation.RELATIVE_TO_SELF, 0.5f);
+        rotateAnimation.setDuration(500);
+        rotateAnimation.setRepeatCount(Animation.INFINITE);
+        rotateAnimation.setRepeatMode(Animation.RESTART);
+        rotateAnimation.setInterpolator(new LinearInterpolator());
+        mIvLoading.startAnimation(rotateAnimation);
